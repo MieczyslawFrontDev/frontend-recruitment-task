@@ -10,10 +10,9 @@ const handlePopupVisibility = () => {
 buttonElement.addEventListener("click", handlePopupVisibility);
 iconElement.addEventListener("click", handlePopupVisibility);
 
-let count = 1;
-
 const handleCounter = () => {
   const counterElement = document.querySelector(".js-counter");
+  let count = localStorage.getItem("count");
 
   counterElement.innerText = count++ + " times";
   if (count > 6) {
@@ -21,12 +20,13 @@ const handleCounter = () => {
   } else {
     resetElement.classList.remove("js-visible");
   }
+  localStorage.setItem("count", count);
 };
 
 buttonElement.addEventListener("click", handleCounter);
 
-const handleCountReset = () => {
-  count = 0;
+const handleCountReset = (count) => {
+  count = localStorage.clear("count");
   handleCounter();
 };
 
