@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+main {
+  margin: 96px auto 0 auto;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
