@@ -30,3 +30,40 @@
 .js-visible {
   display: block;
 }
+
+@media (max-width: 1024px) {
+  .button {
+    font-size: 8px;
+    padding: 8px 16px 8px 16px;
+  }
+  .resetButton {
+    padding: 5px 10px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  button {
+    padding: 4px 8px 4px 8px;
+    font-size: 10px;
+  }
+  .resetButton {
+    padding: 5px 10px;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    font-weight: normal;
+  }
+}
+@media (max-width: 480px) {
+  button {
+    font-size: 12px;
+    padding: 8px 16px 8px 16px;
+  }
+  .resetButton {
+    padding: 3px 5px;
+    bottom: 10px;
+    right: 10px;
+    font-size: 8px;
+  }
+}

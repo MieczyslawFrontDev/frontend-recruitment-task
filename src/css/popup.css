@@ -36,3 +36,80 @@
 .js-visible {
   display: block;
 }
+
+@media (max-width: 1024px) {
+  .popup {
+    width: 600px;
+    height: auto;
+  }
+
+  .popup__content {
+    padding: 30px 0 30px 60px;
+  }
+
+  .popup__title {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .popup {
+    width: 480px;
+    height: auto;
+    top: 25%;
+    left: 50%;
+  }
+
+  .popup__content {
+    padding: 20px 0 20px 40px;
+  }
+
+  .popup__title {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+  }
+
+  .popup__text {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .popup {
+    width: 300px;
+    height: auto;
+  }
+
+  .popup__content {
+    padding: 10px 0 10px 20px;
+  }
+
+  .popup__title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+
+  .popup__text {
+    font-size: 10px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    right: 10px;
+  }
+}

@@ -12,9 +12,54 @@
   margin: 0;
 }
 
-.article__content {
+.article__text {
   font-size: 16px;
   margin: 24px 0 32px 0;
   font-weight: 300;
   line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .article {
+    margin-left: 60px;
+  }
+
+  .article__title {
+    font-size: 20px;
+  }
+
+  .article__text {
+    font-size: 16px;
+    margin: 12px 0 16px 0;
+  }
+}
+@media (max-width: 767px) {
+  .article {
+    margin-left: 40px;
+  }
+
+  .article__title {
+    font-size: 14px;
+  }
+
+  .article__text {
+    font-size: 12px;
+    margin: 8px 0 12px 0;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 480px) {
+  .article {
+    margin-left: 0;
+    flex-basis: auto;
+  }
+
+  .article__title {
+    font-size: 24px;
+  }
+
+  .article__text {
+    font-size: 14px;
+    margin: 16px 0 24px 0;
+  }
 }

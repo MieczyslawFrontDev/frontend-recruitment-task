@@ -20,6 +20,7 @@ main {
   display: flex;
   justify-content: center;
 }
+
 .dark {
   display: none;
   background-color: #121212;
@@ -33,4 +34,23 @@ main {
 
 .js-visible {
   display: block;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    margin: 40px 20px 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px 20px 0 20px;
+  }
 }
