@@ -1,14 +1,21 @@
 const buttonElement = document.querySelector(".js-button");
 const iconElement = document.querySelector(".js-icon");
 const resetElement = document.querySelector(".js-resetButton");
+const darkBackgroundElement = document.querySelector(".js-dark");
+
+const handleBackroundVisibility = () => {
+  darkBackgroundElement.classList.toggle("js-visible");
+};
 
 const handlePopupVisibility = () => {
   const popupElement = document.querySelector(".js-popup");
   popupElement.classList.toggle("js-visible");
+  handleBackroundVisibility();
 };
 
 buttonElement.addEventListener("click", handlePopupVisibility);
 iconElement.addEventListener("click", handlePopupVisibility);
+darkBackgroundElement.addEventListener("click", handlePopupVisibility);
 
 const handleCounter = () => {
   const counterElement = document.querySelector(".js-counter");
