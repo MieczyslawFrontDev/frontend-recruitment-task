@@ -1,4 +1,5 @@
 const buttonElement = document.querySelector(".js-button");
+const iconElement = document.querySelector(".js-icon");
 
 const handlePopupVisibility = () => {
   const popupElement = document.querySelector(".js-popup");
@@ -6,3 +7,4 @@ const handlePopupVisibility = () => {
 };
 
 buttonElement.addEventListener("click", handlePopupVisibility);
+iconElement.addEventListener("click", handlePopupVisibility);
