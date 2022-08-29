@@ -8,3 +8,13 @@ const handlePopupVisibility = () => {
 
 buttonElement.addEventListener("click", handlePopupVisibility);
 iconElement.addEventListener("click", handlePopupVisibility);
+
+let count = 1;
+
+const handleCounter = () => {
+  const counterElement = document.querySelector(".js-counter");
+
+  counterElement.innerText = count++ + " times";
+};
+
+buttonElement.addEventListener("click", handleCounter);
