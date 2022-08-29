@@ -26,3 +26,7 @@
 .popup__text {
   margin: 0;
 }
+
+.js-visible {
+  display: block;
+}
