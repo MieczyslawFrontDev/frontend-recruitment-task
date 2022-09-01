@@ -15,17 +15,17 @@
   position: absolute;
   bottom: 40px;
   right: 40px;
-  background-color: $button-color;
+  background-color: $resetButton-color;
   color: $white-color;
-  border: 2px solid $button-color;
+  border: 2px solid $resetButton-color;
   border-radius: 32px;
   font-weight: 700;
   letter-spacing: 1px;
 
   &:hover {
     background-color: $white-color;
-    color: $button-color;
-    border: 1px solid $button-color;
+    color: $resetButton-color;
+    border: 1px solid $resetButton-color;
   }
 }
 
