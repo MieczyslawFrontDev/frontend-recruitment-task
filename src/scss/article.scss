@@ -1,0 +1,66 @@
+@use "./mixins.scss" as *;
+@use "./variables.scss" as *;
+
+.article {
+  @include setFLex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-basis: 380px;
+  margin-left: 95px;
+
+  &__title {
+    font-size: 42px;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin: 24px 0 32px 0;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $large-resolution) {
+  .article {
+    margin-left: 60px;
+
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      margin: 12px 0 16px 0;
+    }
+  }
+}
+@media (max-width: $medium-resolution) {
+  .article {
+    margin-left: 40px;
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__text {
+      font-size: 12px;
+      margin: 8px 0 12px 0;
+      line-height: 1.5;
+    }
+  }
+}
+@media (max-width: $small-resolution) {
+  .article {
+    margin-left: 0;
+    flex-basis: auto;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 14px;
+      margin: 16px 0 24px 0;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@use "./variables.scss" as *;
+
+.button {
+  padding: 16px 40px 16px 40px;
+  border-radius: 32px;
+  border-style: none;
+  font-weight: 700;
+  color: $white-color;
+  background-color: $primary-color;
+}
+
+.resetButton {
+  display: none;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: $button-color;
+  color: $white-color;
+  border: 2px solid $button-color;
+  border-radius: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: $white-color;
+    color: $button-color;
+    border: 1px solid $button-color;
+  }
+}
+
+.js-visible {
+  display: block;
+}
+
+@media (max-width: $large-resolution) {
+  .button {
+    font-size: 8px;
+    padding: 8px 16px 8px 16px;
+  }
+  .resetButton {
+    padding: 5px 10px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: $medium-resolution) {
+  button {
+    padding: 4px 8px 4px 8px;
+    font-size: 10px;
+  }
+  .resetButton {
+    padding: 5px 10px;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    font-weight: normal;
+  }
+}
+@media (max-width: $small-resolution) {
+  button {
+    font-size: 12px;
+    padding: 8px 16px 8px 16px;
+  }
+  .resetButton {
+    padding: 3px 5px;
+    bottom: 10px;
+    right: 10px;
+    font-size: 8px;
+  }
+}

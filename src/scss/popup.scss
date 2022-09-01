@@ -1,0 +1,117 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+.popup {
+  display: none;
+  width: 920px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid black;
+
+  &__content {
+    @include setFLex;
+    padding: 56px 0 56px 95px;
+    position: relative;
+  }
+
+  &__title {
+    margin: 0 0 24px 0;
+    font-size: 42px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 46px;
+  right: 46px;
+}
+
+.js-visible {
+  display: block;
+}
+
+@media (max-width: $large-resolution) {
+  .popup {
+    width: 600px;
+    height: auto;
+
+    &__content {
+      padding: 30px 0 30px 60px;
+    }
+
+    &__title {
+      margin: 0 0 20px 0;
+      font-size: 30px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: $medium-resolution) {
+  .popup {
+    width: 480px;
+    height: auto;
+    top: 25%;
+    left: 50%;
+
+    &__content {
+      padding: 20px 0 20px 40px;
+    }
+
+    &__title {
+      margin: 0 0 20px 0;
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: $small-resolution) {
+  .popup {
+    width: 300px;
+    height: auto;
+
+    &__content {
+      padding: 10px 0 10px 20px;
+    }
+
+    &__title {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    right: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+@use "./variables.scss" as *;
+
+.image {
+  max-width: 505px;
+  height: 330px;
+}
+
+@media (max-width: $large-resolution) {
+  .image {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: $medium-resolution) {
+  .image {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: $small-resolution) {
+  .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}

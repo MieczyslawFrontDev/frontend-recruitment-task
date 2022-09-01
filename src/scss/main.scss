@@ -1,0 +1,59 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: $secondary-color;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+main {
+  margin: 96px auto 0 auto;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dark {
+  display: none;
+  background-color: #121212;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.js-visible {
+  display: block;
+}
+
+@media (max-width: $large-resolution) {
+  main {
+    margin-top: 60px;
+  }
+}
+@media (max-width: $medium-resolution) {
+  main {
+    margin: 40px 20px 0 20px;
+  }
+}
+@media (max-width: $small-resolution) {
+  main {
+    @include setFLex;
+    justify-content: flex-start;
+    margin: 40px 20px 0 20px;
+  }
+}
